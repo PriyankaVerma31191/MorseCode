@@ -1,3 +1,5 @@
+
+
 const morseCode = {
   A: ".-", B: "-...", C: "-.-.", D: "-..", E: ".", F: "..-.", G: "--.",
   H: "....", I: "..", J: ".---", K: "-.-", L: ".-..", M: "--", N: "-.",
@@ -44,9 +46,9 @@ export function autoTranslate(input) {
   const trimmedInput = input.trim();
   
   
-  const invalidCharCheck = /^[A-Za-z0-9 ]*$/;
+  const invalidCharCheck = /^[A-Za-z ]*$/;
   if (!invalidCharCheck.test(trimmedInput)) {
-      return '';  
+      return 'Argument must be a string';  
   }
 
   
